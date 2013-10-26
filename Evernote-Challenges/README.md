@@ -1,7 +1,7 @@
 ## Evernote Programming Challenges
 https://evernotechallenge.interviewstreet.com/challenges/dashboard/#problems
 
-#### Circular Buffer
+### Circular Buffer
 
 Implement a circular buffer of size N. Allow the caller to append, remove and list the contents of the buffer. Implement the buffer to achieve maximum performance for each of the operations.
 
@@ -53,7 +53,7 @@ Number of removing elements will <= number of elements presents in circular buff
 total number of commands <= 50000.
 total number of characters in input <= 20000000.
 
-#### Top Four
+### Top Four
 
 Given an unordered list of N elements, write a function to find the top four elements of the given list. Make sure your function runs in linear time O(N).
  
@@ -90,7 +90,7 @@ Constraint :
 N < 1000000.
 all numbers will fit  in 32-bit integer.
 
-#### Frequent Terms
+### Frequent Terms
 
 Frequency Counting of Words / Top N words in a document.
  
@@ -135,7 +135,7 @@ Constraint :
 0 < N < 300000 
 0 < term length < 25.
 
-#### Multiply Except Self
+### Multiply Except Self
 
 Given a list of integers, your task is to write a program to output an integer-valued list of equal length such that the output element at index 'i' is the product of all input elements except for the input element at 'i'.
  
