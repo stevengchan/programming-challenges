@@ -1,7 +1,7 @@
 ## Evernote Programming Challenges
 https://evernotechallenge.interviewstreet.com/challenges/dashboard/#problems
 
-### Circular Buffer
+#### Circular Buffer
 
 Implement a circular buffer of size N. Allow the caller to append, remove and list the contents of the buffer. Implement the buffer to achieve maximum performance for each of the operations.
 
@@ -53,7 +53,7 @@ Number of removing elements will <= number of elements presents in circular buff
 total number of commands <= 50000.
 total number of characters in input <= 20000000.
 
-### Top Four
+#### Top Four
 
 Given an unordered list of N elements, write a function to find the top four elements of the given list. Make sure your function runs in linear time O(N).
  
@@ -90,7 +90,7 @@ Constraint :
 N < 1000000.
 all numbers will fit  in 32-bit integer.
 
-### Frequent Terms
+#### Frequent Terms
 
 Frequency Counting of Words / Top N words in a document.
  
@@ -134,3 +134,54 @@ Fi
 Constraint :
 0 < N < 300000 
 0 < term length < 25.
+
+#### Multiply Except Self
+
+Given a list of integers, your task is to write a program to output an integer-valued list of equal length such that the output element at index 'i' is the product of all input elements except for the input element at 'i'.
+ 
+In other words, let inputArray by an integer array of length 'n'.  The solution,computed into outputArray, would be:
+ 
+for each j from 1 to n-2:
+               outputArr[ j ] = inputArray[0] * inputArray[1] * inputArray[2] * ... * inputArray[j-1] * inputArray[j+1] * inputArray[j+2] *...* inputArray[n-1]
+for j = 0
+               outputArray[0] = inputArray[1] * outputArray[2] * ... * outputArray[n-1]
+for j = n-1
+               outputArray[n-1] = outputArray[0] * outputArray[1] * outputArray[2] * ... * outputArray[n-2]        
+ 
+As an example, if inputArray = { 1, 2, 3, 4 }, then
+ 
+outputArray = { 2*3*4, 1*3*4, 1*2*4, 1*2*3 }.
+ 
+Your program should run in O(n) time and should be space efficient.
+ 
+Input format :
+ 
+First line of input contains N , number of elements in list.
+Next N lines will each contain an element (a signed integer)
+ 
+Output format :
+ 
+Print the output list of numbers.
+ 
+Sample input :
+ 
+4
+5
+2
+2
+3
+ 
+Sample ouput :
+ 
+12
+30
+30
+20
+ 
+Constraint :
+
+You may assume that:
+ 
+ - The input array size will always have at least two elements in it, that is, n >= 2.
+ - The product of any subset of the input will never exceed the value of a 64 bit integer.
+ - The maximum length of input array is 1000.
