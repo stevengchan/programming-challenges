@@ -29,11 +29,11 @@ public class CircularBuffer {
 				}
 			} else if (commands[0].equals("R")) {
 				int k = Integer.parseInt(commands[1]);
-        		for (int i = 0; i < k; i++) {
-        			if (!buffer.isEmpty()) {
-        				buffer.poll();
-        			}
-        		}
+				for (int i = 0; i < k; i++) {
+					if (!buffer.isEmpty()) {
+						buffer.poll();
+					}
+				}
 			} else if (commands[0].equals("L")) {
 				for (String s : buffer) {
 					System.out.println(s);
