@@ -18,11 +18,11 @@ public class MultiplyExceptSelf {
         
 		for (int i = 0; i < N; i++) {
 			int x = Integer.parseInt(br.readLine());
-        	nums[i] = x;
-        	prods[i] = mult;
-        	if (i < N - 1) {
-        		mult *= x;
-        	}
+			nums[i] = x;
+			prods[i] = mult;
+			if (i < N - 1) {
+				mult *= x;
+			}
 		}
         
 		mult = 1;

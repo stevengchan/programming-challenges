@@ -36,8 +36,8 @@ public class CircularBuffer {
         		}
 			} else if (commands[0].equals("L")) {
 				for (String s : buffer) {
-        			System.out.println(s);
-        		}
+					System.out.println(s);
+				}
 			}
 			line = br.readLine();
 		}
