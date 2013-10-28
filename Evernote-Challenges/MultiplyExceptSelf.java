@@ -13,29 +13,38 @@ public class MultiplyExceptSelf {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
 		int[] nums = new int[N];
-		int[] prods = new int[N];
-		int mult = 1;
-        
+		long mult = 1;
+		int zeros = 0;
+		
 		for (int i = 0; i < N; i++) {
-			int x = Integer.parseInt(br.readLine());
-			nums[i] = x;
-			prods[i] = mult;
-			if (i < N - 1) {
-				mult *= x;
+			int n = Integer.parseInt(br.readLine());
+			nums[i] = n;
+			if (n == 0) {
+				zeros++;
+			} else {
+				mult *= n;
 			}
 		}
-        
-		mult = 1;
-		for (int i = N - 1; i >= 0; i--) {
-			int x = nums[i];
-			nums[i] = prods[i] * mult;
-			if (i > 0) {
-				mult *= x;
+		
+		if (zeros >= 2) {
+			for (int i = 0; i < N; i++) {
+				System.out.println(0);
 			}
-		}
-        
-		for (int i = 0; i < N; i++) {
-			System.out.println(nums[i]);
+		} else if (zeros == 1) {
+			for (int i = 0; i < N; i++) {
+				int n = nums[i];
+				if (n == 0) {
+					System.out.println(mult);
+				} else {
+					System.out.println(0);
+				}
+			}
+		} else {
+			for (int i = 0; i < N; i++) {
+				int n = nums[i];
+				long x = mult / n;
+				System.out.println(x);
+			}
 		}
 	}
 }
