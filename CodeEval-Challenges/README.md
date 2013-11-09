@@ -8,3 +8,5 @@ https://www.codeeval.com/open_challenges/
 ### Text Dollar
 
 ### Beautiful Strings
+
+### String Permutations
