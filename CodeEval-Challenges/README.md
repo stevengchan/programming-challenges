@@ -6,3 +6,5 @@ https://www.codeeval.com/open_challenges/
 ### Prime Numbers
 
 ### Text Dollar
+
+### Beautiful Strings
