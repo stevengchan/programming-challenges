@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * Code Eval Programming Challenge - Mnth to Last Element
@@ -11,8 +10,7 @@ import java.io.IOException;
 public class MnthToLastElement {
 
 	public static void main(String[] args) throws IOException {
-		File f = new File(args[0]);
-		BufferedReader br = new BufferedReader(new FileReader(f));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String line;
 		
 		while ((line = br.readLine()) != null) {
@@ -26,7 +24,5 @@ public class MnthToLastElement {
 				System.out.println(lineArray[index]);
 			}
 		}
-		
-		br.close();
 	}
 }

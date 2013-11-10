@@ -1,12 +1,16 @@
 ## Code Eval Challenges
 https://www.codeeval.com/open_challenges/
 
-### Mnth to Last Element
+1. Mnth to Last Element
 
-### Prime Numbers
+2. Prime Numbers
 
-### Text Dollar
+3. Text Dollar
 
-### Beautiful Strings
+4. Beautiful Strings
 
-### String Permutations
+5. String Permutations
+
+6. Longest Common Subsequence
+
+7. Following Integer

@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -13,8 +12,7 @@ import java.util.Deque;
 public class TextDollar {
 
 	public static void main(String[] args) throws IOException {
-		File f = new File(args[0]);
-		BufferedReader br = new BufferedReader(new FileReader(f));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String line;
 		String[] ones = { "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
 		String[] teens = { "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen" };
@@ -72,7 +70,5 @@ public class TextDollar {
 			}
 			System.out.println("Dollars");
 		}
-		
-		br.close();
 	}
 }

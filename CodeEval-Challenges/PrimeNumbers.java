@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +12,7 @@ import java.util.List;
 public class PrimeNumbers {
 
 	public static void main(String[] args) throws IOException {
-		File f = new File(args[0]);
-		BufferedReader br = new BufferedReader(new FileReader(f));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String line;
 		List<Integer> primes = new ArrayList<Integer>();
 		int last = 1;
@@ -60,7 +58,5 @@ public class PrimeNumbers {
 			
 			System.out.println();
 		}
-		
-		br.close();
 	}
 }
