@@ -14,3 +14,7 @@ https://www.codeeval.com/open_challenges/
 6. Longest Common Subsequence
 
 7. Following Integer
+
+8. Decryption (in Javascript)
+
+9. Grid Walk
