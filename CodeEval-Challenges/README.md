@@ -18,3 +18,5 @@ https://www.codeeval.com/open_challenges/
 8. Decryption (in Javascript)
 
 9. Grid Walk
+
+10. Find Min
